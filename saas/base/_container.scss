@@ -1,17 +1,17 @@
 .container {
 	padding: 0 15px;
+	.header & {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 @media screen and (min-width: 480px) {
 	.container {
 		width: 480px;
+		height: 60px;
 		margin: 0 auto;
-
-		.header & {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
 	}
 }
 

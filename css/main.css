@@ -37,15 +37,17 @@ button {
   padding: 0 15px;
 }
 
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
+    height: 60px;
     margin: 0 auto;
-  }
-  .header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -65,6 +67,9 @@ button {
 
 .logo {
   font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -75,14 +80,6 @@ button {
 
 .logo-second {
   color: #ffffff;
-}
-
-@media screen and (min-width: 480px) {
-  .logo {
-    font-size: 24px;
-    line-height: 1.17;
-    padding: 16px 0;
-  }
 }
 
 .menu-button {
