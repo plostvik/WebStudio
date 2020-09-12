@@ -1,0 +1,32 @@
+.container {
+	padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+	.container {
+		width: 480px;
+		margin: 0 auto;
+
+		.header & {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 768px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+// .container { // width: 1200px; // padding: 0 15px; // margin: 0 auto; // .header & { // display: flex; // align-items: center; // } // .footer & { // display: flex; // align-items: baseline; // } // };

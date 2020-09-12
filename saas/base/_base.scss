@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	background-color: var(--primary-white-color);
+	color: var(--primary-text-color);
+}
+
+.list {
+	list-style: none;
+}
+
+.link {
+	text-decoration: none;
+	font-style: normal;
+}
+
+address {
+	font-style: normal;
+}
+
+button {
+	cursor: pointer;
+	background-color: transparent;
+}

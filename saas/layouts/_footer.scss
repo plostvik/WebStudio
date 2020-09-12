@@ -1,0 +1,110 @@
+// /* Подвал */
+
+// .footer {
+// 	background-color: $background-footer-color;
+// 	padding-top: 60px;
+// 	padding-bottom: 60px;
+
+// 	& .button {
+// 		display: flex;
+// 		margin-left: 12px;
+// 		margin-top: 0px;
+// 	}
+// }
+
+// .footer-left {
+// 	margin-right: 70px;
+// }
+
+// .footer-middle {
+// 	margin-right: 93px;
+// }
+
+// .footer-right {
+// 	margin-left: auto;
+// }
+
+// .address {
+// 	margin-top: 20px;
+
+// 	& .list-item:not(:last-child) {
+// 		margin-bottom: 9px;
+// 	}
+
+// 	& .link {
+// 		font-size: 14px;
+// 		line-height: 1.7;
+// 		letter-spacing: 0.03em;
+// 		color: $footer-text-color;
+// 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 		&:hover,
+// 		&:focus {
+// 			background-color: $accent-color;
+// 		}
+// 	}
+
+// 	& .location.link {
+// 		font-size: 14px;
+// 		font-style: normal;
+// 		line-height: 1.7;
+// 		letter-spacing: 0.03em;
+// 		color: $primary-white-color;
+// 		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// 		&:hover,
+// 		&:focus {
+// 			background-color: $accent-color;
+// 		}
+// 	}
+// }
+
+// .list.socials {
+// 	display: flex;
+// }
+
+// .socials-list-item {
+// 	background-color: rgba(255, 255, 255, 0.1);
+// 	border-radius: 50%;
+
+// 	&:not(:last-child) {
+// 		margin-right: 10px;
+// 	}
+// }
+
+// .action {
+// 	display: flex;
+// 	margin-bottom: 20px;
+// 	font-weight: 700;
+// 	font-size: 14px;
+// 	line-height: 1.1;
+// 	letter-spacing: 0.03em;
+// 	text-transform: uppercase;
+// 	color: $primary-white-color;
+// }
+
+// .form {
+// 	display: flex;
+// 	align-items: center;
+// }
+
+// .footer-form-input {
+// 	padding: 16px 15px;
+// 	width: 358px;
+// 	height: 50px;
+// 	border: 1px solid rgba(255, 255, 255, 0.3);
+// 	color: $footer-text-color;
+// 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+// 	background-color: $background-footer-color;
+// 	border-radius: 4px;
+// 	font-family: inherit;
+// 	font-size: 100%;
+// 	font-size: 16px;
+// 	line-height: 1.25;
+// 	letter-spacing: 0.03em;
+// }
+
+// .footer-icon {
+// 	margin-left: 10px;
+// 	align-self: center;
+// }
