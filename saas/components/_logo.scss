@@ -16,12 +16,8 @@
 	color: $primary-white-color;
 }
 
-@media screen and (min-width: 480px) {
-	// .logo {
-	// 	font-size: 24px;
-	// 	line-height: 1.17;
-	// }
+@media screen and (min-width: 1200px) {
+	.logo {
+		@include font(26px, 900, 1.19, 0.03em);
+	}
 }
-
-// 		font-size: 26px;
-// line-height: 1.2;
