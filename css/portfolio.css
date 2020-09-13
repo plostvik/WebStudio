@@ -33,6 +33,18 @@ button {
   background-color: transparent;
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 .container {
   padding: 0 15px;
 }
@@ -45,10 +57,8 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    height: 60px;
-  }
   .header .container {
+    height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,6 +69,8 @@ button {
   .container {
     width: 768px;
     margin: 0 auto;
+  }
+  .header .container {
     display: flex;
     align-items: center;
   }
@@ -69,6 +81,41 @@ button {
     width: 1200px;
     margin: 0 auto;
   }
+}
+
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section.team {
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 1199px) {
+  .section.services {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section.features {
+    padding-bottom: 0px;
+  }
+}
+
+.section-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .logo {
@@ -95,6 +142,22 @@ button {
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
+}
+
+.button {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
+  min-width: 200px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .header {
@@ -295,6 +358,42 @@ button {
 @media screen and (min-width: 1200px) {
   .burger-menu {
     margin-left: 93px;
+  }
+  .navigation {
+    margin-right: 305px;
+  }
+  .header-contacts {
+    display: block;
+    margin-left: auto;
+  }
+  .header-contacts-list {
+    display: flex;
+    padding: 0;
+  }
+  .header-contacts-list-item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+  .contact-link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .contacts-icon {
+    margin-right: 10px;
+  }
+  .contacts-icon.envelope {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts-icon.phone {
+    width: 10px;
+    height: 18px;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

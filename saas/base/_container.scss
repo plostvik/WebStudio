@@ -11,9 +11,8 @@
 
 @media screen and (max-width: 767px) {
 	.container {
-		height: 60px;
-
 		.header & {
+			height: 60px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -25,8 +24,11 @@
 	.container {
 		width: 768px;
 		margin: 0 auto;
-		display: flex;
-		align-items: center;
+
+		.header & {
+			display: flex;
+			align-items: center;
+		}
 	}
 }
 

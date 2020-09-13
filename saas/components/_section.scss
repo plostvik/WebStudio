@@ -1,8 +1,27 @@
-// .section {
-// 	padding-top: 94px;
-// 	padding-bottom: 94px;
+.section {
+	padding-top: 60px;
+	padding-bottom: 60px;
 
-// 	&.team {
-// 		background-color: $background-secondary-color;
-// 	}
-// }
+	&.team {
+		background-color: $background-secondary-color;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.section {
+		&.services {
+			display: none;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section {
+		padding-top: 94px;
+		padding-bottom: 94px;
+
+		&.features {
+			padding-bottom: 0px;
+		}
+	}
+}
