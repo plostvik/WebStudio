@@ -1,31 +1,7 @@
 .footer {
 	background-color: $background-footer-color;
 	padding-top: 60px;
-	padding-bottom: 60px;
-
-	// & .button {
-	// 	// display: flex;
-	// 	// margin-left: 12px;
-	// 	margin-top: 0px;
-	// }
-}
-
-.footer-left {
-	// margin-right: 70px;
-	margin: 0 auto;
-	text-align: center;
-}
-
-.footer-middle {
-	// margin-right: 93px;
-	margin: 60px auto 0;
-	text-align: center;
-}
-
-.footer-right {
-	margin: 60px auto 0;
-	text-align: center;
-	// margin-left: auto;
+    padding-bottom: 60px;
 }
 
 .address {
@@ -38,7 +14,7 @@
 	& .link {
         @include font(14px, 400, 1,71); 
 		color: $footer-text-color;
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover,
 		&:focus {
@@ -52,7 +28,7 @@
 		line-height: 1.7;
 		letter-spacing: 0.03em;
 		color: $primary-white-color;
-		transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover,
 		&:focus {
@@ -94,10 +70,72 @@
     margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+    .footer-left {
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .footer-middle {
+        margin: 60px auto 0;
+        text-align: center;
+    }
+    
+    .footer-right {
+        margin: 60px auto 0;
+        text-align: center;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .footer-middle,
     .footer-left {
         margin: 0;
+        text-align: center;
         width: calc(100% / 2);
     }
+
+    .footer-right {
+        margin: 60px auto 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer {
+        & .button {
+        	margin-left: 12px;
+        }
+    }
+
+    .footer-left {
+        margin-right: 70px;
+    }
+    
+    .footer-middle {
+        margin-right: 93px;
+    }
+    
+    .footer-right {
+        margin-left: auto;
+    }
+
+    .address {
+        & .list-item:not(:last-child) {
+            margin-bottom: 9px;
+        }
+   }
+
+   .action {
+    display: flex;
+   }
+
+   .form {
+    display: flex;
+   }
+
+   .footer-form-input {
+    width: 358px;
+   }
 }

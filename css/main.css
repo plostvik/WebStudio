@@ -74,6 +74,9 @@ button {
     display: flex;
     align-items: center;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer .container {
     display: flex;
     flex-wrap: wrap;
@@ -85,6 +88,10 @@ button {
   .container {
     width: 1200px;
     margin: 0 auto;
+  }
+  .footer .container {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -162,7 +169,7 @@ button {
 .social-icon {
   width: 20px;
   height: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .social-icon {
@@ -185,7 +192,7 @@ button {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-middle .social-link {
@@ -211,6 +218,7 @@ button {
 
 .button {
   padding: 10px 32px;
+  height: 50px;
   border-radius: 4px;
   border: 0;
   min-width: 200px;
@@ -281,7 +289,7 @@ button {
   display: block;
   text-align: center;
   color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:hover, .contact-link:focus {
@@ -291,7 +299,7 @@ button {
 .contacts-icon {
   margin-right: 10px;
   fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-icon.envelope {
@@ -496,6 +504,12 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -716,7 +730,7 @@ button {
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item-link:hover, .clients-list-item-link:focus {
@@ -725,7 +739,7 @@ button {
 
 .clients-logo {
   fill: #afb1b8;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-list-item-link:hover .clients-logo,
@@ -736,10 +750,16 @@ button {
 .clients-list-item-link:hover .clients-logo,
 .clients-list-item-link:focus .clients-logo {
   fill: #2196f3;
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list-item:not(:nth-last-child(-n + 1)) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-  .clients-list-item:not(:nth-last-child(-n + 1)) {
+  .clients-list-item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 30px;
   }
 }
@@ -768,21 +788,6 @@ button {
   padding-bottom: 60px;
 }
 
-.footer-left {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer-middle {
-  margin: 60px auto 0;
-  text-align: center;
-}
-
-.footer-right {
-  margin: 60px auto 0;
-  text-align: center;
-}
-
 .address {
   margin-top: 20px;
 }
@@ -797,7 +802,7 @@ button {
   line-height: 1;
   letter-spacing: 71;
   color: rgba(255, 255, 255, 0.6);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .link:hover, .address .link:focus {
@@ -810,7 +815,7 @@ button {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address .location.link:hover, .address .location.link:focus {
@@ -853,11 +858,58 @@ button {
   margin-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .footer-left {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .footer-middle {
+    margin: 60px auto 0;
+    text-align: center;
+  }
+  .footer-right {
+    margin: 60px auto 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-middle,
   .footer-left {
     margin: 0;
+    text-align: center;
     width: calc(100% / 2);
+  }
+  .footer-right {
+    margin: 60px auto 0;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .button {
+    margin-left: 12px;
+  }
+  .footer-left {
+    margin-right: 70px;
+  }
+  .footer-middle {
+    margin-right: 93px;
+  }
+  .footer-right {
+    margin-left: auto;
+  }
+  .address .list-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .action {
+    display: flex;
+  }
+  .form {
+    display: flex;
+  }
+  .footer-form-input {
+    width: 358px;
   }
 }
 /*# sourceMappingURL=main.css.map */

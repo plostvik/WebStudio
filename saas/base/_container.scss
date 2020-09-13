@@ -29,7 +29,11 @@
 			display: flex;
 			align-items: center;
 		}
+	}
+}
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.container {
 		.footer & {
 			display: flex;
 			flex-wrap: wrap;
@@ -42,7 +46,11 @@
 	.container {
 		width: 1200px;
 		margin: 0 auto;
+		.footer & {
+			display: flex;
+			align-items: baseline;
 	}
+}
 }
 
 // .container { // width: 1200px; // padding: 0 15px; // margin: 0 auto; // .header & { // display: flex; // align-items: center; // } // .footer & { // display: flex; // align-items: baseline; // } // };

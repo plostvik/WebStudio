@@ -19,10 +19,11 @@
 	color: $primary-white-color;
 }
 
-// @media screen and (min-width: 768px) {
-// 	.hero-title {
-// 	}
-// }
+@media screen and (min-width: 768px) {
+	.hero-title {
+		width: 360px;
+	}
+}
 
 @media screen and (min-width: 1200px) {
 	.hero {
