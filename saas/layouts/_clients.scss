@@ -43,7 +43,7 @@
 }
 
 @media screen and (max-width: 767px) {
-	.clients-list-item:not(:nth-last-child(-n + 2)) {
+	.clients-list-item:not(:nth-last-child(-n + 1)) {
 		margin-bottom: 30px;
 	}
 }

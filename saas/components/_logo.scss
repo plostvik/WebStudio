@@ -3,10 +3,6 @@
 	@include font(24px, 900, 1.17, 0.03em);
 	color: $title-color;
 
-	// .header & {
-	// 	margin-right: 93px;
-	// }
-
 	& .logo-first {
 		color: $accent-color;
 	}
@@ -15,10 +11,6 @@
 		color: $primary-white-color;
 	}
 }
-
-// .logo-second {
-// 	color: $primary-white-color;
-// }
 
 @media screen and (min-width: 1200px) {
 	.logo {

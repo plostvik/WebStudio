@@ -12,7 +12,7 @@
 
 .hero-title {
 	margin: 0 auto 32px;
-	width: 360px;
+	width: calc(100%-30px);
 
 	@include font(26px, 900, 1.62, 0.06em);
 	text-transform: uppercase;

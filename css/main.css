@@ -489,7 +489,7 @@ button {
 
 .hero-title {
   margin: 0 auto 32px;
-  width: 360px;
+  width: calc(100%-30px);
   font-size: 26px;
   font-weight: 900;
   line-height: 1.62;
@@ -739,7 +739,7 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .clients-list-item:not(:nth-last-child(-n + 2)) {
+  .clients-list-item:not(:nth-last-child(-n + 1)) {
     margin-bottom: 30px;
   }
 }
