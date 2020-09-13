@@ -42,13 +42,13 @@
 	fill: $accent-color;
 }
 
-@media screen and (max-width: 779px) {
+@media screen and (max-width: 767px) {
 	.clients-list-item:not(:nth-last-child(-n + 2)) {
 		margin-bottom: 30px;
 	}
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
 	.clients-list-item-link {
 		width: 226px;
 	}

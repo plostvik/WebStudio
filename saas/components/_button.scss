@@ -11,4 +11,17 @@
 	background-color: $accent-color;
 	border-color: transparent;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	@media screen and (max-width: 1199px) {
+		.footer-right & {
+			margin-top: 20px;
+			text-align: center;
+		}
+	}
+}
+
+.button-icon-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

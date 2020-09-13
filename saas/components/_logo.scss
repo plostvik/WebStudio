@@ -10,11 +10,15 @@
 	& .logo-first {
 		color: $accent-color;
 	}
+
+	.footer & {
+		color: $primary-white-color;
+	}
 }
 
-.logo-second {
-	color: $primary-white-color;
-}
+// .logo-second {
+// 	color: $primary-white-color;
+// }
 
 @media screen and (min-width: 1200px) {
 	.logo {
