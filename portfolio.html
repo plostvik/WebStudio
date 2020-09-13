@@ -18,37 +18,44 @@
 		<!-- Шапка сайта -->
 		<header class="header">
 			<div class="container">
-				<nav class="navigation">
-					<a href="./index.html" class="link logo">
-						<span lang="en" class="logo-first">Web</span>
-						<span lang="en">Studio</span>
-					</a>
-					<ul class="list site-nav">
-						<li class="site-nav-item"><a href="./index.html" class="link">Студия</a></li>
-						<li class="site-nav-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-						<li class="site-nav-item"><a href="" class="link">Контакты</a></li>
-					</ul>
-				</nav>
-				<address class="contacts">
-					<ul class="list contacts-list">
-						<li class="contacts-item">
-							<a href="mailto:info@devstudio.com" class="link contact-link">
-								<svg class="contacts-icon envelope">
-									<use href="./images/symbol-defs.svg#icon-envelope"></use>
-								</svg>
-								info@devstudio.com
-							</a>
-						</li>
-						<li class="contacts-item">
-							<a href="tel:+380961111111" class="link contact-link">
-								<svg class="contacts-icon phone">
-									<use href="./images/symbol-defs.svg#icon-phone"></use>
-								</svg>
-								+38 096 111 11 11
-							</a>
-						</li>
-					</ul>
-				</address>
+				<a href="./index.html" class="link logo">
+					<span lang="en" class="logo-first">Web</span>Studio
+				</a>
+				<button type="button" class="menu-button" data-menu-button aria-expanded="false" aria-controls="burger-menu">
+					<svg width="40" height="40" aria-label="Переключатель мобильного меню">
+						<use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
+						<use class="icon-menu" href="./images/symbol-defs.svg#icon-burger-menu"></use>
+					</svg>
+				</button>
+				<div class="burger-menu" data-menu>
+					<nav class="navigation">
+						<ul class="list navigation-list">
+							<li class="navigation-list-item"><a href="./index.html" class="link">Студия</a></li>
+							<li class="navigation-list-item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+							<li class="navigation-list-item"><a href="" class="link">Контакты</a></li>
+						</ul>
+					</nav>
+					<address class="header-contacts">
+						<ul class="list header-contacts-list">
+							<li class="header-contacts-list-item">
+								<a href="mailto:info@devstudio.com" class="link contact-link">
+									<svg class="contacts-icon envelope">
+										<use href="./images/symbol-defs.svg#icon-envelope"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="header-contacts-list-item">
+								<a href="tel:+380961111111" class="link contact-link">
+									<svg class="contacts-icon phone">
+										<use href="./images/symbol-defs.svg#icon-phone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</address>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -213,8 +220,7 @@
 			<div class="container">
 				<div class="footer-left">
 					<a href="./index.html" class="link logo">
-						<span lang="en" class="logo-first">Web</span>
-						<span lang="en" class="logo-second">Studio</span>
+						<span lang="en" class="logo-first">Web</span>Studio
 					</a>
 					<address class="address">
 						<ul class="list">
@@ -230,23 +236,23 @@
 				</div>
 				<div class="footer-middle">
 					<b class="action">Присоединяйтесь</b>
-					<ul class="list socials">
-						<li class="socials-list-item">
+					<ul class="social-list list">
+						<li class="social-list-item">
 							<a href="" class="link social-link" target="_blank" aria-label="Ссылка на Istagram">
 								<svg class="social-icon"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg>
 							</a>
 						</li>
-						<li class="socials-list-item">
+						<li class="social-list-item">
 							<a href="" class="link social-link" target="_blank" aria-label="Ссылка на Twitter">
 								<svg class="social-icon"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg>
 							</a>
 						</li>
-						<li class="socials-list-item">
+						<li class="social-list-item">
 							<a href="" class="link social-link" target="_blank" aria-label="Ссылка на Facebook">
 								<svg class="social-icon"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg>
 							</a>
 						</li>
-						<li class="socials-list-item">
+						<li class="social-list-item">
 							<a href="" class="link social-link" target="_blank" aria-label="Ссылка на LinkedIn">
 								<svg class="social-icon"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg>
 							</a>
@@ -258,14 +264,16 @@
 					<form class="form" action="/subscribe" method="post">
 						<input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" />
 						<button type="submit" class="button">
-							Подписаться
+							<span class="button-icon-center">Подписаться
 							<svg class="footer-icon" width="24" height="24">
 								<use href="./images/symbol-defs.svg#icon-icon5"></use>
 							</svg>
+							</span>
 						</button>
 					</form>
 				</div>
 			</div>
 		</footer>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

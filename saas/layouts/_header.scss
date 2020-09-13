@@ -78,6 +78,7 @@
 @media screen and (max-width: 767px) {
 	.burger-menu {
 		position: absolute;
+		z-index: 1;
 		top: 60px;
 		left: 0;
 		padding: 40px 50px 52px 50px;
