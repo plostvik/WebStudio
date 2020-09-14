@@ -105,15 +105,33 @@
 					<h2 class="section-title">Чем мы занимаемся</h2>
 					<ul class="list services-list">
 						<li class="services-list-item">
-							<img srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x" src="./images/work1.jpg" alt="Человек работает за ноутбуком" width="370" height="294" />
+							<img
+								srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
+								src="./images/work1.jpg"
+								alt="Человек работает за ноутбуком"
+								width="370"
+								height="294"
+							/>
 							<h3 class="services-list-item-title">Десктопные приложения</h3>
 						</li>
 						<li class="services-list-item">
-							<img srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x" src="./images/work2.jpg" alt="Человек работает за ноутбуком и держит в руке телефон" width="370" height="294"	/>
+							<img
+								srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
+								src="./images/work2.jpg"
+								alt="Человек работает за ноутбуком и держит в руке телефон"
+								width="370"
+								height="294"
+							/>
 							<h3 class="services-list-item-title">Мобильные приложения</h3>
 						</li>
 						<li class="services-list-item">
-							<img srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x" src="./images/work3.jpg" alt="Человек выбирает с планшета цвет" width="370" height="294" />
+							<img
+								srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
+								src="./images/work3.jpg"
+								alt="Человек выбирает с планшета цвет"
+								width="370"
+								height="294"
+							/>
 							<h3 class="services-list-item-title">Дизайнерские решения</h3>
 						</li>
 					</ul>
@@ -125,7 +143,37 @@
 					<h2 class="section-title">Наша команда</h2>
 					<ul class="list team-list">
 						<li class="team-list-item">
-							<img src="./images/worker1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260" />
+							<picture class="picture">
+								<source
+									srcset="./images/team/worker1.webp 1x, .images/team-desktop/worker1@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker1.jpg 1x, .images/team/worker1@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/worker-t1.webp 1x, ./images/team/worker-t1@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-t1.jpg 1x, ./images/team/worker-t1@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/worker-m1.webp 1x, ./images/team/worker-m1@2x.webp 2x"
+									media="(min-width: 480px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-m1.jpg 1x, ./images/team/worker-m1@2x.jpg 2x"
+									media="(min-width: 480px)"
+								/>
+
+								<img src="./images/team/worker-m1.jpg" alt="Фото Игоря Демьяненко" width="100%" />
+							</picture>
 							<h3 class="team-list-item-name">Игорь Демьяненко</h3>
 							<p lang="en" class="team-list-item-position">Product Designer</p>
 							<ul class="list team-list-item-socials social-list">
@@ -160,7 +208,36 @@
 							</ul>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/worker2.jpg" alt="Фото Ольги Репиной" width="270" height="260" />
+							<picture class="picture">
+								<source
+									srcset="./images/team/worker2.webp 1x, .images/team-desktop/worker2@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker2.jpg 1x, .images/team/worker2@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/worker-t2.webp 1x, ./images/team/worker-t2@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-t2.jpg 1x, ./images/team/worker-t2@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/worker-m2.webp 1x, ./images/team/worker-m2@2x.webp 2x"
+									media="(min-width: 480px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-m2.jpg 1x, ./images/team/worker-m2@2x.jpg 2x"
+									media="(min-width: 480px)"
+								/>
+								<img src="./images/team/worker-m2.jpg" alt="Фото Игоря Демьяненко" width="100%" />
+							</picture>
 							<h3 class="team-list-item-name">Ольга Репина</h3>
 							<p lang="en" class="team-list-item-position">Frontend Developer</p>
 							<ul class="list team-list-item-socials social-list">
@@ -195,7 +272,36 @@
 							</ul>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/worker3.jpg" alt="Фото Николая Тарасова" width="270" height="260" />
+							<picture class="picture">
+								<source
+									srcset="./images/team/worker3.webp 1x, .images/team-desktop/worker3@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker3.jpg 1x, .images/team/worker3@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/worker-t3.webp 1x, ./images/team/worker-t3@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-t3.jpg 1x, ./images/team/worker-t3@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/worker-m3.webp 1x, ./images/team/worker-m3@2x.webp 2x"
+									media="(min-width: 480px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-m3.jpg 1x, ./images/team/worker-m3@2x.jpg 2x"
+									media="(min-width: 480px)"
+								/>
+								<img src="./images/team/worker-m3.jpg" alt="Фото Игоря Демьяненко" width="100%" />
+							</picture>
 							<h3 class="team-list-item-name">Николай Тарасов</h3>
 							<p lang="en" class="team-list-item-position">Marketing</p>
 							<ul class="list team-list-item-socials social-list">
@@ -230,7 +336,36 @@
 							</ul>
 						</li>
 						<li class="team-list-item">
-							<img src="./images/worker4.jpg" alt="Фото Михаила Ермакова" width="270" height="260" />
+							<picture class="picture">
+								<source
+									srcset="./images/team/worker4.webp 1x, .images/team-desktop/worker4@2x.webp 2x"
+									media="(min-width: 1200px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker4.jpg 1x, .images/team/worker4@2x.jpg 2x"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="./images/team/worker-t4.webp 1x, ./images/team/worker-t4@2x.webp 2x"
+									media="(min-width: 768px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-t4.jpg 1x, ./images/team/worker-t4@2x.jpg 2x"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="./images/team/worker-m4.webp 1x, ./images/team/worker-m4@2x.webp 2x"
+									media="(min-width: 480px)"
+									type="image/webp"
+								/>
+								<source
+									srcset="./images/team/worker-m4.jpg 1x, ./images/team/worker-m4@2x.jpg 2x"
+									media="(min-width: 480px)"
+								/>
+								<img src="./images/team/worker-m4.jpg" alt="Фото Игоря Демьяненко" width="100%" />
+							</picture>
 							<h3 class="team-list-item-name">Михаил Ермаков</h3>
 							<p lang="en" class="team-list-item-position">UI Designer</p>
 							<ul class="list team-list-item-socials social-list">
@@ -367,10 +502,11 @@
 					<form class="form" action="/subscribe" method="post">
 						<input class="footer-form-input" type="email" name="user-email" placeholder="E-mail" />
 						<button type="submit" class="button">
-							<span class="button-icon-center">Подписаться
-							<svg class="footer-icon" width="24" height="24">
-								<use href="./images/symbol-defs.svg#icon-icon5"></use>
-							</svg>
+							<span class="button-icon-center">
+								Подписаться
+								<svg class="footer-icon" width="24" height="24">
+									<use href="./images/symbol-defs.svg#icon-icon5"></use>
+								</svg>
 							</span>
 						</button>
 					</form>
@@ -380,51 +516,51 @@
 		<!-- Модальное окно -->
 		<div class="backdrop is-hidden" data-modal>
 			<div class="popups-container">
-			<div class="modal">
-				<button type="button" class="button-close" data-modal-close>
-					<svg width="11" height="11"><use href="./images/symbol-defs.svg#icon-x"></use></svg>
-				</button>
-				<form action="" class="modal-form">
-					<h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
-					<label class="modal-form-label" for="user-name">Имя</label>
-					<div class="modal-form-field">
-						<input name="user-name" type="text" id="user-name" class="modal-form-input" />
-						<svg width="12" height="12" class="modal-form-icon">
-							<use href="./images/symbol-defs.svg#icon-username"></use>
-						</svg>
-					</div>
-					<label class="modal-form-label" for="user-phone">Телефон</label>
-					<div class="modal-form-field">
-						<input name="user-phone" type="tel" id="user-phone" class="modal-form-input" />
-						<svg width="13" height="13" class="modal-form-icon">
-							<use href="./images/symbol-defs.svg#icon-userphone"></use>
-						</svg>
-					</div>
-					<label class="modal-form-label" for="user-mail">Почта</label>
-					<div class="modal-form-field">
-						<input name="user-mail" type="email" id="user-mail" class="modal-form-input" />
-						<svg width="15" height="12" class="modal-form-icon">
-							<use href="./images/symbol-defs.svg#icon-usermail"></use>
-						</svg>
-					</div>
-					<label class="modal-form-label" for="user-message">Комментарий</label>
-					<textarea
-						name="user-message"
-						id="user-message"
-						class="modal-form-message"
-						placeholder="Введите текст"
-					></textarea>
-					<input type="checkbox" class="modal-form-checkbox visually-hidden" name="user-policy" id="user-policy" />
-					<label class="modal-form-checkbox-label" for="user-policy">
-						<span>
-							Соглашаюсь с рассылкой и принимаю
-							<a href="" class="link modal-link" target="_blank">Условия договора</a>
-						</span>
-					</label>
-					<button type="submit" class="button submit-button">Отправить</button>
-				</form>
+				<div class="modal">
+					<button type="button" class="button-close" data-modal-close>
+						<svg width="11" height="11"><use href="./images/symbol-defs.svg#icon-x"></use></svg>
+					</button>
+					<form action="" class="modal-form">
+						<h2 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h2>
+						<label class="modal-form-label" for="user-name">Имя</label>
+						<div class="modal-form-field">
+							<input name="user-name" type="text" id="user-name" class="modal-form-input" />
+							<svg width="12" height="12" class="modal-form-icon">
+								<use href="./images/symbol-defs.svg#icon-username"></use>
+							</svg>
+						</div>
+						<label class="modal-form-label" for="user-phone">Телефон</label>
+						<div class="modal-form-field">
+							<input name="user-phone" type="tel" id="user-phone" class="modal-form-input" />
+							<svg width="13" height="13" class="modal-form-icon">
+								<use href="./images/symbol-defs.svg#icon-userphone"></use>
+							</svg>
+						</div>
+						<label class="modal-form-label" for="user-mail">Почта</label>
+						<div class="modal-form-field">
+							<input name="user-mail" type="email" id="user-mail" class="modal-form-input" />
+							<svg width="15" height="12" class="modal-form-icon">
+								<use href="./images/symbol-defs.svg#icon-usermail"></use>
+							</svg>
+						</div>
+						<label class="modal-form-label" for="user-message">Комментарий</label>
+						<textarea
+							name="user-message"
+							id="user-message"
+							class="modal-form-message"
+							placeholder="Введите текст"
+						></textarea>
+						<input type="checkbox" class="modal-form-checkbox visually-hidden" name="user-policy" id="user-policy" />
+						<label class="modal-form-checkbox-label" for="user-policy">
+							<span>
+								Соглашаюсь с рассылкой и принимаю
+								<a href="" class="link modal-link" target="_blank">Условия договора</a>
+							</span>
+						</label>
+						<button type="submit" class="button submit-button">Отправить</button>
+					</form>
+				</div>
 			</div>
-		</div>
 		</div>
 		<script src="./js/modal.js"></script>
 		<script src="./js/menu.js"></script>
