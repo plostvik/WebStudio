@@ -233,6 +233,10 @@ button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.modal-form .button {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 1199px) {
   .footer-right .button {
     margin-top: 20px;
@@ -516,6 +520,10 @@ button {
   }
   .menu-button.is-open .icon-menu {
     display: none;
+  }
+  .menu-button:hover .menu-button-icon,
+  .menu-button:focus .menu-button-icon {
+    fill: #2196f3;
   }
   .header-contacts {
     margin-bottom: 52px;

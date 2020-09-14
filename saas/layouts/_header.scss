@@ -148,6 +148,11 @@
 		&.is-open .icon-menu {
 			display: none;
 		}
+
+		&:hover .menu-button-icon,
+		&:focus .menu-button-icon {
+			fill: $accent-color;
+		}
 	}
 
 	.header-contacts {
