@@ -247,6 +247,10 @@
 		padding: 0;
 	}
 
+	.header-contacts-list-item {
+		flex-shrink: 1;
+	}
+
 	.header-contacts-list-item:not(:last-child) {
 		margin-bottom: 0;
 		margin-right: 30px;

@@ -328,7 +328,6 @@ button {
 
 .portfolio-item-thumb-text {
   position: absolute;
-  display: flex;
   top: 0;
   left: 0;
   justify-content: center;
@@ -350,6 +349,7 @@ button {
 .portfolio-item:hover .portfolio-item-thumb-text,
 .portfolio-item:focus .portfolio-item-thumb-text {
   transform: translateY(0);
+  overflow: auto;
 }
 
 .portfolio-footer {
@@ -607,6 +607,9 @@ button {
     display: flex;
     padding: 0;
   }
+  .header-contacts-list-item {
+    flex-shrink: 1;
+  }
   .header-contacts-list-item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 30px;
@@ -679,8 +682,8 @@ button {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: 14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }

@@ -41,7 +41,7 @@
     display: block;
     margin-bottom: 20px;
     
-    @include font(14px, 700, 1,14);
+    @include font(14px, 700, 1.14);
 	text-transform: uppercase;
 	color: $primary-white-color;
 }

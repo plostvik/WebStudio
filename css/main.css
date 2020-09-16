@@ -662,6 +662,9 @@ button {
     display: flex;
     padding: 0;
   }
+  .header-contacts-list-item {
+    flex-shrink: 1;
+  }
   .header-contacts-list-item:not(:last-child) {
     margin-bottom: 0;
     margin-right: 30px;
@@ -712,7 +715,7 @@ button {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-t@2x.jpg");
   }
@@ -724,7 +727,7 @@ button {
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx), screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero@2x.jpg");
   }
@@ -1062,8 +1065,8 @@ button {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
-  line-height: 1;
-  letter-spacing: 14;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
